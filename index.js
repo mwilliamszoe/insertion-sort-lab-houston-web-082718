@@ -11,22 +11,13 @@ for(let i=0; i<array.length; i++){
   return currentMin
 }
 
-function insertionSort(array){
- let sorted=[]
- let min;
- while(array.legnth !=0){
-   min = findMinAndRemove(array)
-   sorted.push(min)
- }
- return sorted;
-}
 
-// function insertionSort(array){
-//   let sorted = []
-//   let min;
-//   while(array.length != 0){
-//     min = findMinAndRemove(array)
-//     sorted.push(min)
-//   }
-//   return sorted;
-// }
+function insertionSort(array){
+  let sorted = []
+  let min;
+  while(array.length != 0){
+    min = findMinAndRemove(array)
+    sorted.push(min)
+  }
+  return sorted;
+}
